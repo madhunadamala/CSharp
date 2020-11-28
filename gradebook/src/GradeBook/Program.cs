@@ -6,7 +6,11 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           var book = new Book("Madhu's Grade Book");
+           book.AddGrade(56.1); 
+           book.AddGrade(90.5);
+           book.AddGrade(101); 
+           book.ShowStatistics();
         }
     }
 }
